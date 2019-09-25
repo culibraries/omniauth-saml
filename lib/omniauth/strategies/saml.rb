@@ -47,9 +47,6 @@ module OmniAuth
         authn_request = OneLogin::RubySaml::Authrequest.new
 
         with_settings do |settings|
-          puts options
-          puts settings
-          puts additional_params_for_authn_request
           redirect(authn_request.create(settings, additional_params_for_authn_request))
         end
       end
