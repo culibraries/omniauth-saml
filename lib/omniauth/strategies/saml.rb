@@ -12,6 +12,8 @@ module OmniAuth
 
       RUBYSAML_RESPONSE_OPTIONS = OneLogin::RubySaml::Response::AVAILABLE_OPTIONS
 
+      option :authn_requests_signed, true
+      option :want_assertions_signed, true
       option :name_identifier_format, nil
       option :idp_sso_target_url_runtime_params, {}
       option :request_attributes, [
