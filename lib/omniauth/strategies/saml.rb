@@ -11,7 +11,7 @@ module OmniAuth
       end
 
       RUBYSAML_RESPONSE_OPTIONS = OneLogin::RubySaml::Response::AVAILABLE_OPTIONS
-      option :security => {:authn_requests_signed => true,
+      option :security, {:authn_requests_signed => true,
           :want_assertions_signed => true,
           :want_assertions_encrypted  => false,
           :want_name_id               => false,
